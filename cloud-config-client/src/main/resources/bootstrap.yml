@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: configuration-client
+  cloud:
+    config:
+      uri: ${vcap.services.configuration-service.credentials.uri:http://username:password@localhost:8888}
